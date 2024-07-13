@@ -47,4 +47,12 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
         transform: translateY(2px); /* move the button down slightly */
       }
+
+    footer{
+        position: relative;
+        top: 80px;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
 }

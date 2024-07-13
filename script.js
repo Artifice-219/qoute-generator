@@ -9,7 +9,7 @@ caller_btn.addEventListener("click", function () {
       let joke = data.joke;
 
       if (joke === undefined) {
-        joke = "Mahilig kasi ako mag online games nuon haha";
+        document.querySelector(".joke").innerHTML =" Bakit ka nag IT ? ME : Mahilig kasi ako mag online games nuon haha";
       }
       document.querySelector(".joke").innerHTML = joke;
     });

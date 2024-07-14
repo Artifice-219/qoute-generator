@@ -7,10 +7,22 @@ caller_btn.addEventListener("click", function () {
     })
     .then(function (data) {
       let joke = data.joke;
+      let type = data.type;
 
-      if (joke === undefined) {
-        document.querySelector(".joke").innerHTML =" Bakit ka nag IT ? ME : Mahilig kasi ako mag online games nuon haha";
+      // check  if type is single or not 
+
+      if(type === 'single'){
+        document.querySelector(".joke").innerHTML = joke;
+        
       }
-      document.querySelector(".joke").innerHTML = joke;
+      if(type === 'twopart'){
+        let setup, delivery;
+        setup = data.setup;
+        delivery = data.delivery;
+        document.querySelector('.joke').innerHTML = setup + delivery;   
+        
+      }
     });
-});
+
+
+}); 
